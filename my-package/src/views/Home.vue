@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    初始化封装类
     <MessageBox></MessageBox>
+    <div class="title">hello world</div>
   </div>
 </template>
 
@@ -14,6 +14,12 @@ export default {
   }
 }
 </script>
-<style>
-
+<style scoped lang="scss">
+.home{
+  .title{
+    width: 100%;
+    height: 100px;
+    background: peachpuff;
+  }
+}
 </style>
