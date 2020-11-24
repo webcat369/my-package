@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dc86a07-2446-4568-8362-d52f8c967043" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-package/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-package/src/components/MessageBox/MessageBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/components/MessageBox/MessageBox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-package/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-package/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-package/src/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,6 +44,11 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\YCSK\my-package\my-package\src\assets\images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,25 +58,55 @@
       <option name="presentableId" value="Default" />
       <updated>1605255433265</updated>
       <workItem from="1605255434309" duration="1257000" />
-      <workItem from="1605256974779" duration="2771000" />
+      <workItem from="1605256974779" duration="3098000" />
+      <workItem from="1605581818470" duration="877000" />
+      <workItem from="1606181455583" duration="8719000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化弹框">
+      <created>1605260821047</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605260821047</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化弹框" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化弹框" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605255901105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605255901105" />
-    <state x="771" y="421" key="Github.CreateGistDialog" timestamp="1605256310881">
+    <state x="997" y="146" key="CommitChangelistDialog2" timestamp="1605260816311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="771" y="421" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605256310881" />
+    <state x="997" y="146" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605260816311" />
+    <state x="771" y="421" key="Github.CreateGistDialog" timestamp="1606184475720">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="421" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606184475720" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1605256277693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605256277693" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605260826978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605260826978" />
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605260783505">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605260783505" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606184841891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606184841891" />
   </component>
 </project>

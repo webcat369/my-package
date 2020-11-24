@@ -1,35 +1,82 @@
 <template>
-    <div class="box">
+    <div class="box" v-show="this.showMessage">
       <div class="mask"></div>
-      <div class="content"></div>
+      <div class="content" :style="{width:`${Width}px`,height:`${Height}px`}">
+        <slot></slot>
+        <div class="close" @click="closePopUps">
+          <img src="../../assets/images/close.svg" alt="">
+        </div>
+      </div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'MessageBox'
+  name: 'MessageBox',
+  data () {
+    return {
+      showMessage: false
+    }
+  },
+  props: {
+    Width: {
+      type: Number,
+      default: 500,
+      required: false
+    },
+    Height: {
+      type: Number,
+      default: 350,
+      required: false
+    }
+  },
+  methods: {
+    closePopUps () {
+      this.showMessage = false
+    }
+  }
 }
 </script>
 
 <style scoped lang="scss">
 .box{
-  z-index: 999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   .mask{
-    position: fixed;
-    top: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     left: 0;
+    top: 0;
     right: 0;
-    background: rgba(0,0,0,0.3);
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
   }
   .content{
-    width: 500px;
-    height: 350px;
+    //width: 500px;
+    //height: 350px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    .close{
+      width:30px;
+      height: 30px;
+      position: absolute;
+      right:-10%;
+      top: -5%;
+      transform: translate(-50%,-50%);
+      img{
+        width: 100%;
+      }
+    }
   }
 }
 </style>
