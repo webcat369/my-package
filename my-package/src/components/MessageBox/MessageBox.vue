@@ -1,5 +1,5 @@
 <template>
-    <div class="box" v-show="this.showMessage">
+  <div class="box" v-show="showMessage">
       <div class="mask"></div>
       <div class="content" :style="{width:`${Width}px`,height:`${Height}px`}">
         <slot></slot>
@@ -53,18 +53,17 @@ export default {
     top: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
   }
   .content{
     //width: 500px;
     //height: 350px;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
     border-radius: 10px;
-    padding: 20px 20px;
     box-sizing: border-box;
     .close{
       width:30px;
