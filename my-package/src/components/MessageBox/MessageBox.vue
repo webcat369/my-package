@@ -1,6 +1,6 @@
 <template>
-  <transition name="bounce"
-              class="yourElement"
+  <transition name="fadeIn_Out"
+              :duration="{ enter: 500, leave: 800 }"
               enter-active-class="animate__animated animate__fadeIn"
               leave-active-class="animate__animated animate__fadeOut"
   >
@@ -84,11 +84,6 @@ export default {
       }
     }
   }
-}
-.yourElement {
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-iteration-count: infinite;
 }
 
 </style>
