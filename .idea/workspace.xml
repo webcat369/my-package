@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc86a07-2446-4568-8362-d52f8c967043" name="Default Changelist" comment="" />
+    <list default="true" id="4dc86a07-2446-4568-8362-d52f8c967043" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-package/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-package/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-package/src/components/MessageBox/MessageBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/components/MessageBox/MessageBox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-package/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-package/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-package/src/views/Home.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-package/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -57,6 +64,8 @@
       <workItem from="1605256974779" duration="3098000" />
       <workItem from="1605581818470" duration="877000" />
       <workItem from="1606181455583" duration="8920000" />
+      <workItem from="1606724923591" duration="750000" />
+      <workItem from="1606810838709" duration="3470000" />
     </task>
     <task id="LOCAL-00001" summary="初始化弹框">
       <created>1605260821047</created>

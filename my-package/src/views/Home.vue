@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="title" @click="showPopUps">hello MessageBox</div>
-    <MessageBox ref="messageBox" class="message-box" :Width="500" :Height="250">
+    <MessageBox ref="messageBox" class="message-box" @closeMessage="close" :Width="500" :Height="250">
       <div class="my-message-box-header">
         <span>提示:</span>
       </div>
@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="my-message-box-btns">
-        <button type="button" @click="close">取消</button>
+        <button type="button" @click="cancel">取消</button>
         <button type="button" @click="confirm">确认</button>
       </div>
     </MessageBox>
@@ -44,16 +44,24 @@ export default {
       this.$refs.messageBox.showMessage = true
     },
     // 取消按钮置空
+    cancel () {
+      this.text = ''
+      this.$refs.err.style.visibility = 'hidden'
+      this.$refs.inputInner.classList.remove('invalid')
+    },
+    // 关闭弹框
     close () {
       console.log('取消')
       this.text = ''
+      this.$refs.err.style.visibility = 'hidden'
+      this.$refs.inputInner.classList.remove('invalid')
       this.$refs.messageBox.showMessage = false
     },
     // 确认按钮提交
     confirm () {
-      var z = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/
+      const Email = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/
       // 正则表达式的test方法：检测一个字符串是否匹配某个模式
-      if (!z.test(this.text)) {
+      if (!Email.test(this.text)) {
         this.$refs.err.style.visibility = 'visible'
         this.$refs.inputInner.classList.add('invalid')
       } else {

@@ -1,13 +1,19 @@
 <template>
-  <div class="box" v-show="showMessage">
-      <div class="mask"></div>
-      <div class="content" :style="{width:`${Width}px`,height:`${Height}px`}">
-        <slot></slot>
-        <div class="close" @click="closePopUps">
-          <img src="../../assets/images/close.svg" alt="">
+  <transition name="bounce"
+              class="yourElement"
+              enter-active-class="animate__animated animate__fadeIn"
+              leave-active-class="animate__animated animate__fadeOut"
+  >
+    <div class="box" v-show="showMessage">
+        <div class="mask"></div>
+        <div class="content" :style="{width:`${Width}px`,height:`${Height}px`}">
+          <slot></slot>
+          <div class="close" @click="closePopUps">
+            <img src="../../assets/images/close.svg" alt="">
+          </div>
         </div>
       </div>
-    </div>
+  </transition>
 </template>
 
 <script>
@@ -33,6 +39,7 @@ export default {
   methods: {
     closePopUps () {
       this.showMessage = false
+      this.$emit('closeMessage')
     }
   }
 }
@@ -78,4 +85,10 @@ export default {
     }
   }
 }
+.yourElement {
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
 </style>
